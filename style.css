@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+}
+
+:root {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --buttonColor: #2a2c30;
+    --secondaryColor: #4b4f56;
+    --borderColor: #e3eaf0;
+    --backgroundColor: #f7f7f7;
+    --backgroundSecondary: #fefefe;
+    --textColor: #1e1f23;
+    --anchorColor: #535bf2;
+    --main-color: #535bf2;
+    --supporting-color: #ebf3fe;
+    --glow-color: hsl(186, 91%, 4%);
+}
+
+body {
+    margin: 1rem auto;
+    padding: 0 32px;
+    min-width: 320px;
+    background-color: var(--backgroundColor);
+}
+
+
+/****************header Section********************/
+
+.navbar {
+    background-color: #9DC7C8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+.nav-p {
+    margin-left: 50rem;
+    display: flex;
+}
+
+.navbar a {
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-left: 1.5rem;
+    color: #ebf3fe;
+    background-color: #1e1f23;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+
+/****************Header********************/
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo img {
+    max-width: 7rem;
+    margin: 1.5rem;
+}
+
+.head-a {
+    margin: -2rem 0 0 40rem;
+}
+
+#cartadd {
+    text-decoration: none;
+    margin: -1rem 0 0 5rem;
+}
+
+.head-a a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.head-a a:hover {
+    background-color: #1e1f23;
+    border-radius: 2rem;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#cartadd {
+    color: white;
+    background-color: #1e1f23;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#cartadd:hover {
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+    font-size: 1.3rem;
+}
+
+#cartadd i {
+    margin-right: 0.8rem;
+}
+
+
+/**************hero Section**********************/
+
+.hero-section {
+    background-color: #edf2f4;
+    height: 30.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 40rem;
+    margin-right: 2rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+.hero-text {
+    margin: 10rem 0 0 2.5rem;
+}
+
+& #text-1 {
+    color: #1e1f23;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -10rem;
+}
+
+& #text-2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+& #text-3 {
+    font-weight: 550;
+}
+
+.hero-text button {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #1e1f23;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+
+/******************Sales Adds off page****************************/
+
+.sale-add {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-off {
+    display: flex;
+    margin: 3rem 0 0 2rem;
+    background-color: #edf2f4;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#img-1 img {
+    width: 10rem;
+}
+
+.sale-img img {
+    width: 8rem;
+    height: auto;
+}
+
+#p1 {
+    color: #22333b;
+}
+
+#p2 {
+    font-size: 1.5rem;
+}
+
+.sale-text a {
+    margin-top: 5rem;
+    text-decoration: none;
+    color: orange;
+}
+
+
+/***************Services shippings****************************/
+
+.services-deliver {
+    margin-top: 2rem;
+    height: 7rem;
+    display: flex;
+    background-color: #edf2f4;
+    border-radius: 1.5rem;
+}
+
+.ser-content {
+    display: flex;
+    align-items: center;
+    margin-left: -3rem;
+}
+
+.shipping {
+    display: flex;
+    margin: 0 0 0 9rem;
+}
+
+.ser-img i {
+    font-size: 2rem;
+    margin-top: 0.6rem;
+}
+
+#sh-1 {
+    margin-left: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#sh-2 {
+    margin-left: 1.3rem;
+    font-size: 0.9rem;
+}
+
+
+/****************Why chose us**************************/
+
+.why-text {
+    margin: 2.5rem 0 0 3rem;
+}
+
+#why-1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/************Product item note******************/
+
+#productContainer {
+    margin: 2rem 0 4rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.product {
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 20rem;
+    height: 35rem;
+}
+
+.container-pro {
+    background-color: #edf2f4;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pro-type {
+    display: flex;
+    width: fit-content;
+    background-color: #e5c89e;
+    border-radius: 0.7rem;
+    font-size: 0.9rem;
+}
+
+#pro-computer {
+    padding: 0 0.4rem 0 0.4rem;
+}
+
+.pro-image img {
+    margin: 1rem 0 0 2rem;
+    width: 15rem;
+}
+
+#product1 {
+    font-size: 2rem;
+    font-weight: 750;
+}
+
+.productRating {
+    color: yellow;
+    margin-left: -0.4rem;
+}
+
+.productRating i {
+    font-size: 0.7rem;
+    margin: 0.6rem 0 1rem 0;
+}
+
+.productPriceElement {
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.productActualPrice {
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+.productStockElement {
+    display: flex;
+    font-size: 1.1rem;
+    gap: 2rem;
+}
+
+.productQuantityElement {
+    display: flex;
+    gap: 2rem;
+}
+
+.stockElement {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.productPiece {
+    margin-top: 1rem;
+}
+
+.cartIn,
+.cartout {
+    margin-top: 1rem;
+    background-color: white;
+    width: 3rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.cartIn {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.cartout {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.productQuantity {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-right: none;
+    width: 3rem;
+}
+
+.add-to-cart-button {
+    padding: 1rem;
+    background-color: #1e1f23;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.add-to-cart-button i {
+    margin-right: 0.6rem;
+}
+
+
+/********************Why chose us 2*************************/
+
+.chose-container {
+    margin: 0 0 0 4rem;
+}
+
+.why-chose-us {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 3rem 3rem 3rem;
+}
+
+.section-text1 {
+    width: 25rem;
+}
+
+.section-text2 {
+    width: 25rem;
+}
+
+#chose-1 {
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: #4b4f56;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+#shose-heading {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#chose-text {
+    font-weight: 500;
+}
+
+.chose-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+    background-color: #4b4f56;
+    border-radius: 50%;
+}
+
+.chose-img img {
+    width: 20rem;
+    height: auto;
+}
+
+
+/*******************Footer************************/
+
+footer {
+    padding: 2rem;
+    background-color: #1e1f23;
+    color: white;
+    border-radius: 2rem;
+}
+
+.foot-back {
+    display: flex;
+}
+
+.foot-2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+.shopping {
+    margin: 0 0 0 4rem;
+}
+
+#heading-footer {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#logo-text {
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+}
+
+.foot-logo {
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-logo img {
+    max-width: 4rem;
+}
+
+.foot-links {
+    display: flex;
+}
+
+.email-footer input {
+    padding: 0 0.5rem 0 1rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.social-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.social-foot i {
+    margin: 2rem 0 0 1.5rem;
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce app</title>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <p>Free Shipping. 30-day return or refund guarantee.</p>
+        <div class="nav-p">
+            <a href="sign.com">Sign In</a>
+            <a href="signup.com">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="main-logo"><img src="/anthm-logo.png" alt=""></div>
+        <div class="head-a">
+            <a href="home">Home</a>
+            <a href="About.html">About</a>
+            <a href="Product.html">Product</a>
+            <a href="contact">Contact</a>
+        </div>
+        <a id="cartadd" href="Addtocart"><i class="fa-solid fa-cart-shopping"></i>  1</a>
+    </div>
+    <div class="hero-section">
+        <div class="hero-text">
+            <p id="text-1">EXPLORE THE LATEST IN TECH INDUSTRY</p>
+            <p id="text-2">Your Destination for Cutting-Edge Gadgets!</p>
+            <p id="text-3">Welcome to Thapa eComStore, your ultimate destination for cutting-edge gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a world of possibilities!</p>
+            <button>Explore Our Product</button>
+        </div>
+        <div class="hero-img"><img src="/heroImage.png" alt=""></div>
+
+    </div>
+    <div class="sale-add">
+        <div class="container-off">
+            <div class="sale-text">
+                <p id="p1">NEW YEAR SALE</p>
+                <p id="p2">Get And Extra 50% Off</p>
+                <a href="show-now">SHOW NOW</a>
+            </div>
+            <div id="img-1" class="sale-img"><img src="/laptop.png" alt=""></div>
+
+        </div>
+        <div class="container-off">
+            <div class="sale-text">
+                <p id="p1">NEW YEAR SALE</p>
+                <p id="p2">Get And Extra 50% Off</p>
+                <a href="show-now">SHOW NOW</a>
+            </div>
+            <div class="sale-img"><img src="/headphoneEcom.png" alt=""></div>
+        </div>
+        <div class="container-off">
+            <div class="sale-text">
+                <p id="p1">NEW YEAR SALE</p>
+                <p id="p2">Get And Extra 50% Off</p>
+                <a href="show-now">SHOW NOW</a>
+            </div>
+            <div class="sale-img"><img src="/mobiles.png" alt=""></div>
+        </div>
+    </div>
+    <div class="services-deliver">
+        <div class="ser-content">
+            <div class="shipping">
+                <div class="ser-img"><i class="fa-solid fa-truck-fast"></i></div>
+                <div class="ser-p">
+                    <p id="sh-1">worldwide shipping</p>
+                    <p id="sh-2">order above $100</p>
+                </div>
+            </div>
+            <div class="shipping">
+                <div class="ser-img"><i class="fa-solid fa-rotate"></i></div>
+                <div class="ser-p">
+                    <p id="sh-1">Easy 30 Day Returns</p>
+                    <p id="sh-2">Back Returns in 7 Days</p>
+                </div>
+
+            </div>
+            <div class="shipping">
+                <div class="ser-img"><i class="fa-solid fa-sack-dollar"></i></div>
+                <div class="ser-p">
+                    <p id="sh-1">money back guarantee</p>
+                    <p id="sh-2">guarantee with in 30-Days</p>
+                </div>
+
+            </div>
+            <div class="shipping">
+                <div class="ser-img"><i class="fa-solid fa-headset"></i></div>
+                <div class="ser-p">
+                    <p id="sh-1">Easy Online Support</p>
+                    <p id="sh-2">24/7 Any time support</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="why-text">
+        <p id="why-1">Why Choose Thapa Store</p>
+        <p id="why-2">Choose Thapa EduHub for a holistic, enriching learning experience that empowers you to achieve your goals.</p>
+    </div>
+    <!---------------Product section---------------------------->
+    <section class="container">
+        <div id="productContainer"></div>
+    </section>
+
+    <!------------------template for product---------------------------->
+    <template class="producttemplate">
+        <div class="product">
+            <div class="container-pro">
+                <div class="pro-type">
+                    <p id="pro-computer"></p>
+                </div>
+                
+                <div class="pro-image">
+                    <img id="pro-images" src="" alt="">
+                </div>
+
+                <p id="product-name"></p>
+                <div class="productRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="productDescription"></p>
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available:</p>
+                    <p class="productStock"></p>
+                </div>
+
+                <div class="productQuantityElement">
+                    <p class="productPiece">Quantity(Pieces)</p>
+                    <div class="stockElement">
+                        <button class="cartIn">+</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartout">-</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i><space> Add To Cart
+                  </button>
+            </div>
+        </div>
+    </template>
+
+
+
+    <div class="chose-container">
+        <h2>Why Choose Thapa Store</h2>
+        <p>Choose Thapa EduHub for a holistic, enriching learning experience that empowers you to achieve your goals.</p>
+    </div>
+    <section class="why-chose-us">
+        <div class="section-text1">
+            <p id="chose-1">1</p>
+            <p id="shose-heading">Wide Selection</p>
+            <p id="chose-text">Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
+            <p id="chose-1">2</p>
+            <p id="shose-heading">Quality Assurance</p>
+            <p id="chose-text">Every gadget at Thapa Store undergoes rigorous quality checks, guaranteeing reliability and performance, so you can shop with confidence knowing you're getting the best..</p>
+            <p id="chose-1">3</p>
+            <p id="shose-heading">Competitive Prices</p>
+            <p id="chose-text">Enjoy great value with Thapa Store's competitive prices on high-quality gadgets, making top-of-the-line technology accessible to all without compromising on quality or performance.</p>
+        </div>
+        <div class="chose-img">
+            <img src="public/ecompost.png" alt="">
+        </div>
+        <div class="section-text2">
+            <p id="chose-1">4</p>
+            <p id="shose-heading">Expert Guidance</p>
+            <p id="chose-text">Our knowledgeable staff provides expert guidance, helping you choose the right gadget to meet your needs and preferences, ensuring you make informed decisions every step of the way.</p>
+            <p id="chose-1">5</p>
+            <p id="shose-heading">Convenient Shopping</p>
+            <p id="chose-text">With Thapa Store, shopping for gadgets is easy and convenient. Our user-friendly website and secure payment options ensure a seamless experience from browsing to checkout, all from the comfort of your home.</p>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="foot-back">
+            <div class="foot-1">
+                <div class="foot-logo"><img src="\anthm-logo.png" alt=""></div>
+                <p id="logo-text">Welcome to Thapa EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+            </div>
+            <div class="foot-2">
+                <div class="foot-links">
+                    <div class="shopping">
+                        <p id="heading-footer">Shopping</p>
+                        <p>Computer Science</p>
+                        <p>Laptop Store</p>
+                        <p>Sales & Discou</p>
+                        <p>Accessories</p>
+                    </div>
+                    <div class="shopping">
+                        <p id="heading-footer">Newsletter</p>
+                        <p>Computer Science</p>
+                        <p>Laptop Store</p>
+                        <p>Sales & Discou</p>
+                        <p>Accessories</p>
+                    </div>
+                    <div class="shopping">
+                        <p id="heading-footer">What's new!</p>
+                        <p>Become a Brand Ambassador</p>
+                        <p>Customer Reviews</p>
+                        <p>Why we do what we do</p>
+                        <p>Why we do what we do</p>
+                        <p>Company News</p>
+                        <p>Why we do what we do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="email-footer">
+                <input type="email" placeholder="Your Email">
+            </div>
+        </div>
+        <div class="social-foot">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>
