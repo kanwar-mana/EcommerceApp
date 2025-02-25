@@ -4,65 +4,96 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link id="logo-link" rel="icon" type="image/svg+xml" href="/anthm-logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce app</title>
 </head>
 
 
 <body>
+    <!-- ------toast------- -->
+    <div class="toastred">
+        <div class="toast-content">
+          <i class="uil uil-check toastred-check"></i>
+          <div class="message">
+            <span class="message-text text-1">Success</span>
+            <span class="message-text text-2">Your changes has been saved</span>
+          </div>
+        </div>
+        <i class="uil uil-multiply toast-close"></i>
+        <div class="progressred"></div>
+      </div>
+      <!-- ----------navbar-------------- -->
     <div class="navbar">
         <p>Free Shipping. 30-day return or refund guarantee.</p>
         <div class="nav-p">
             <a href="sign.com">Sign In</a>
             <a href="signup.com">Sign Up</a>
         </div>
-
     </div>
 
     <div class="header">
         <div class="main-logo"><img src="/images/anthm-logo.png" alt=""></div>
         <div class="head-a">
-            <a href="index.html">HOME</a>
-            <a href="About.html">ABOUT</a>
-            <a href="product.html">PRODUCT</a>
-            <a href="Contact.html">CONTACT</a>
-            <a id="cartadd" href="bucket.html"><i class="fa-solid fa-cart-shopping"></i><p id="cartadd-p"> 0</p></a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Product.html">Product</a>
+            <a href="Contact.html">Contact Us</a>
         </div>
-
+        <a id="cartadd" href="Addtocart"><i class="fa-solid fa-cart-shopping"></i><p id="cartadd-p"> 0</p></a>
     </div>
+    <!-- Bucket Section -->
 
-    <div class="chose-container">
-        <h2>Why Choose Thapa Store</h2>
-        <p>Choose Thapa EduHub for a holistic, enriching learning experience that empowers you to achieve your goals.</p>
-    </div>
-    <section class="why-chose-us">
-        <div class="section-text1">
-            <p id="chose-1">1</p>
-            <p id="shose-heading">Wide Selection</p>
-            <p id="chose-text">Thapa Store offers a diverse range of gadgets, from smartphones to smart home devices, ensuring you find what you need to elevate your lifestyle and meet your tech requirements.</p>
-            <p id="chose-1">2</p>
-            <p id="shose-heading">Quality Assurance</p>
-            <p id="chose-text">Every gadget at Thapa Store undergoes rigorous quality checks, guaranteeing reliability and performance, so you can shop with confidence knowing you're getting the best..</p>
-            <p id="chose-1">3</p>
-            <p id="shose-heading">Competitive Prices</p>
-            <p id="chose-text">Enjoy great value with Thapa Store's competitive prices on high-quality gadgets, making top-of-the-line technology accessible to all without compromising on quality or performance.</p>
+     <section class="bucket_section">
+        <div id="bucket_container"></div>
+        <div class="total_class">
+            <p id="top_heading">Total Price Summary</p>
+            <div class="sub_total">
+                <p>Sub Total:</p>
+                <p id="sub_total_price">0</p>
+            </div>
+            <div class="tax">
+                <p>Tax.</p>
+                <p id="tax_amount">344</p>
+            </div>
+            <hr>
+            <div class="total_amount">
+                <p>Total Amount :</p>
+                <p id="total_price">0</p>
+            </div>
         </div>
-        <div class="chose-img">
-            <img src="/images/ecompost.png" alt="">
-        </div>
-        <div class="section-text2">
-            <p id="chose-1">4</p>
-            <p id="shose-heading">Expert Guidance</p>
-            <p id="chose-text">Our knowledgeable staff provides expert guidance, helping you choose the right gadget to meet your needs and preferences, ensuring you make informed decisions every step of the way.</p>
-            <p id="chose-1">5</p>
-            <p id="shose-heading">Convenient Shopping</p>
-            <p id="chose-text">With Thapa Store, shopping for gadgets is easy and convenient. Our user-friendly website and secure payment options ensure a seamless experience from browsing to checkout, all from the comfort of your home.</p>
+     </section>
 
+     <section class="total">
+   
+     </section>
+     <!-- Bucket template -->
+
+    <template class="products_in_bucket">
+        <div class="bucket_product_temp" id="card_template">
+            <div class="bucket_pro">
+                <p id="bucket_type"></p>
+            </div>
+            <div class="bkt_img">
+                <img id="bkt_img1" src="" alt="">
+            </div>
+            <p class="bucket_product_name"></p>
+            <p class="bucket_product_price"></p>
+            <div class="bucket_product_Quantity">
+                <p class="bucket_product_piece"></p>
+                <div class="bucket_sum">
+                    <button class="bucket_cartin">+</button>
+                    <p id="bucket_quantity">1</p>
+                    <button class="bucket_cartout">-</button>
+                </div>
+                <button id="bkt_rmv_btn">Remove</button>
+            </div>
         </div>
-    </section>
+    </template>
+    <!-- Footer Section -->
 
 
     <footer>
@@ -111,6 +142,7 @@
             <i class="fa-brands fa-tiktok"></i>
         </div>
     </footer>
+    <script type="module" src="/bucket.js"></script>
 
 </body>
 
