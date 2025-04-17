@@ -91,12 +91,9 @@ npm run dev
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
 
-Your Name - [your-email@example.com]
+Kanwar Abdull Rahman - [kanwarabdullrahman@gmail.com]
 
-Project Link: [https://github.com/yourusername/EcommerceApp](https://github.com/yourusername/EcommerceApp) 
+Project Link: [https://github.com/kanwar-mana/EcommerceApp](https://github.com/kanwar-mana/EcommerceApp) 
